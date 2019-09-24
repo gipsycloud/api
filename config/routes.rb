@@ -17,6 +17,9 @@ Rails.application.routes.draw do
   namespace :api do
     namespace :v1 do
       resources :customers
+      scope module: :stores do
+        resources :branches, path: 'stores/branches'
+      end
     end
   end
 end
