@@ -49,3 +49,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'dotenv-rails'
 gem 'active_model_serializers', '~> 0.9.3'
 gem 'ransack'
+gem 'pagy'
+gem 'geokit-rails' # => for location services
