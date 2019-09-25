@@ -51,3 +51,4 @@ gem 'active_model_serializers', '~> 0.9.3'
 gem 'ransack'
 gem 'pagy'
 gem 'geokit-rails' # => for location services
+gem 'better_errors', '~> 2.1', '>= 2.1.1'
