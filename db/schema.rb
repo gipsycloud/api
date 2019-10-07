@@ -16,12 +16,15 @@ ActiveRecord::Schema.define(version: 2019_09_23_093229) do
   enable_extension "plpgsql"
 
   create_table "customers", force: :cascade do |t|
-    t.string "display_name"
-    t.string "email_address"
-    t.string "phone_number"
-    t.string "points"
-    t.string "coupons"
-    t.string "stores"
+    t.string "name", null: false
+    t.datetime "age"
+    t.boolean "sex"
+    t.string "nrc_no", null: false
+    t.string "email"
+    t.string "phone"
+    t.string "external_id"
+    t.string "township"
+    t.string "address"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

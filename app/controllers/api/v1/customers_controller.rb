@@ -40,10 +40,10 @@ class Api::V1::CustomersController < ApplicationController
   private
 
   def customer_params
-    params.require(:customer).permit(:id, :display_name, :email_address, :phone_number, :points, :coupons, :stores)
+    params.require(:customer).permit(:id, :age, :sex, :name, :nrc_no, :email, :phone, :external_id, :township, :address)
   end
 
   def update_param
-    params.require(:customer).permit(:display_name, :points, :coupons, :stores)
+    params.require(:customer).permit(:name, :nrc_no, :email, :phone, :external_id, :township, :address)
   end
 end
